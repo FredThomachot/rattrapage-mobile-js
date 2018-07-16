@@ -18,14 +18,14 @@ La partie 3 peut être abordée avant la fin du module 2. Gardez vous au moins u
 
 Tout votre travail doit être fait en utilisant **Git**. Votre avancement devra être présenté dans des commits, sous la forme suivante :
 - Un commit minimum par exercice, avec un message reprenant l'intitulé de l'exercice
-- Chaque commit contient les modifications de code **et** une modification du sujet pour renseigner l'avancement. 
+- Chaque commit contient les modifications de code **et** une modification du sujet pour renseigner l'avancement.
 
 ( Exemple de commit )
 Exemple pour le [premier exercice](https://github.com/campus-digital-grenoble/alternance-rattrapage-mobile-js#mise-en-place-dune-page) :
 
 <img width="956" alt="git-commit-list" src="https://user-images.githubusercontent.com/632197/42624459-bc56d8ac-85c5-11e8-83a5-b9058dd9c938.png">
 
-*Les fichiers readme sont [au format Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Pour chaque exercice que vous compléterez, cochez la case dans le sujet en rajoutant une croix :* 
+*Les fichiers readme sont [au format Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Pour chaque exercice que vous compléterez, cochez la case dans le sujet en rajoutant une croix :*
 [Exemple de 1er commit](https://user-images.githubusercontent.com/632197/42624447-b7be13a0-85c5-11e8-8c31-4e2a1b191e45.png)
 [Exemple de 2nd commit](https://user-images.githubusercontent.com/632197/42624453-ba0e3568-85c5-11e8-9e49-c495b5edee2c.png)
 
@@ -44,8 +44,8 @@ Voici quelques fonctionnalités que nous souhaitons :
 
 ### Mise en place d'une page
 
-- [ ] Créez une simple page HTML avec un titre.
-- [ ] Ajoutez les libraries jQuery et Bootstrap qui nous serviront pour la suite du développement.
+- [x] Créez une simple page HTML avec un titre.
+- [x] Ajoutez les libraries jQuery et Bootstrap qui nous serviront pour la suite du développement.
 
 Une fois que tout fonctionne, faites un premier commit ( vous aurez sûrement besoin d'initialiser le repository git ). Quelle est la commande à utiliser ? 🤔
 
@@ -55,7 +55,7 @@ Une fois que tout fonctionne, faites un premier commit ( vous aurez sûrement be
 
 <details>
  <summary>Exemple de données ( cliquer pour dérouler )</summary>
- 
+
 ```js
 [
   {
@@ -352,7 +352,7 @@ Des questions vont vous être posées, voici un exemple de choix :
 * Si vous regardez le fichier `README.md` du projet vous voyez que trois commandes sont indiquées, quel est le but de chacune ?
 
 *Votre réponse :*
- 
+
 * Lancez le projet.
 
 - [ ] Une fois que tout fonctionne, faites un premier commit ( vous aurez sûrement besoin d'initialiser le repository git ). Quelle est la commande à utiliser ? 🤔
@@ -380,7 +380,7 @@ Des questions vont vous être posées, voici un exemple de choix :
 
 Nous allons travailler sur le même type de données que dans l'exercice précédent.
 
-C'est à dire qu'un projet respecte ce format : 
+C'est à dire qu'un projet respecte ce format :
 
 ```js
 {
@@ -411,7 +411,7 @@ Voici un exemple de style que cela pourrait avoir :
 
 Voici un [exemple](http://recordit.co/pkAPiKSGsg.) de résultat auquel vous pourriez parvenir.
 
-Ressources : 
+Ressources :
   * https://vuejs.org/v2/guide/index.html
   * https://github.com/vuejs/vue-devtools ( devtools de Vue, à installer absolument ! )
 
@@ -431,7 +431,7 @@ VueJS offre la possibilité de faire des listes très facilement, nous allons le
 * Comment passe-t-on de la donnée à un composant enfant ?
 * Quels sont les avantages en procédant ainsi ?
 
-Ressources : 
+Ressources :
   * https://vuejs.org/v2/guide/components-props.html#ad
   * https://vuejs.org/v2/guide/index.html
   * https://vuejs.org/v2/guide/list.html
@@ -465,7 +465,7 @@ Voici un [exemple](http://recordit.co/dJ5uhyVRK0) d'interface à laquelle vous p
 
 * Quelle est la différence de logique entre JQuery et VueJS ?
 
-Ressources : 
+Ressources :
   * https://vuejs.org/v2/guide/list.html
 
 ### 7) Faire un appel HTTP.
@@ -505,7 +505,7 @@ Voici un exemple d'adaptation du composant :
 * Comment savoir si la requête est en cours ou non ? Ajouter un loader pour montrer que la requête est en cours.
 *Votre réponse :*
 
-Ressources : 
+Ressources :
   * https://vuejs.org/v2/guide/list.html
   * http://putaindecode.io/fr/articles/js/es2015/promises/
 
@@ -548,7 +548,7 @@ Ressources :
 
 Les compétences manquantes sont principalement le mémo ainsi que le schéma, reprenez les présentations faites en groupe pour valider ces compétences.
 
-Pour pratiquer Cordova, vous pouvez prendre votre application VueJS précédemment faite et l'encapsuler dans Cordova : 
+Pour pratiquer Cordova, vous pouvez prendre votre application VueJS précédemment faite et l'encapsuler dans Cordova :
 
 Ressources :
   * https://itnext.io/make-hybrid-platform-cordova-vue-webpack-2fb7031c4f9b
