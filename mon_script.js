@@ -192,13 +192,43 @@ const datax = [
 
   $(document).ready(function() {
       
-    function showDatax() {
-        for (let i=0; i<datax.length; i++)
+    function showDatax(floux) {
+        for (let i=0; i < floux.length; i++)
         {
-        $('#datax').append(`<tr><td><img src="${datax[i].picture}"</td><td>${datax[i].name}</td><td>${datax[i].isActive ? 'oui': 'non'}</td><td>${datax[i].creation}</td></tr>`);
+        $('#table').append(`<tr><td><img src="${floux[i].picture}"</td><td>${floux[i].name}</td><td>${floux[i].isActive ? 'oui': 'non'}</td><td>${floux[i].creation}</td></tr>`);
         }
      }
 
-    return showDatax();
-  });
+    showDatax(datax);
+    
+    $('#search').keyup(function(){
+        
+            let toMatch =  $(this).val();
+            let matched =  matchedDatax(datax, toMatch);
+            $('#table > tbody').empty();
+            showDatax(matched);
+        });
+
+    function matchedDatax(list, toMatch) {
+    return list.filter( datax => datax.name.startsWith(toMatch.toUpperCase()));
+    }
+})
+
+
+// SEARCH AVEC PLUGIN :
+//  $(document).ready(function() {
+//     $( '#table' ).searchable({
+//         striped: true,
+//         oddRow: { 'background-color': '#f5f5f5' },
+//         evenRow: { 'background-color': '#fff' },
+//         searchType: 'strict'
+//     });
+// });
+
+
+
+    
+
+
+
 
