@@ -212,8 +212,6 @@ const datax = [
     function matchedDatax(list, toMatch) {
     return list.filter( datax => datax.name.startsWith(toMatch.toUpperCase()));
     }
-})
-
 
 // SEARCH AVEC PLUGIN :
 //  $(document).ready(function() {
@@ -225,10 +223,41 @@ const datax = [
 //     });
 // });
 
+    $('#trinom').click(function(){
+    
+        datax.sort(function (a, b) {
+        return a.name < b.name ? -1 : 1;
+         });
+         $('#table > tbody').empty();
+            showDatax(datax);
+    })
 
+    //  datax.forEach(function(v) {
+    //     console.log(v.name);  
+        
+    // });
+
+      $('#tridate').click(function(){
+    
+        datax.sort(function (a, b) {
+        return new Date(a.creation) - new Date(b.creation);
+         });
+         $('#table > tbody').empty();
+            showDatax(datax);
+    });
 
     
 
+
+
+
+
+
+
+
+
+    
+});
 
 
 
