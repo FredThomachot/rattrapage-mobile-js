@@ -213,7 +213,7 @@ const datax = [
     return list.filter( datax => datax.name.startsWith(toMatch.toUpperCase()));
     }
 
-// SEARCH AVEC PLUGIN :
+// SEARCH AVEC PLUGIN JQUERY-SEARCHABLE:
 //  $(document).ready(function() {
 //     $( '#table' ).searchable({
 //         striped: true,
@@ -227,6 +227,7 @@ const datax = [
     
         datax.sort(function (a, b) {
         return a.name < b.name ? -1 : 1;
+
          });
          $('#table > tbody').empty();
             showDatax(datax);
@@ -246,7 +247,43 @@ const datax = [
             showDatax(datax);
     });
 
+    $('#tridateinv').click(function(){
     
+        datax.sort(function (a, b) {
+        return new Date(b.creation) - new Date(a.creation);
+         });
+         $('#table > tbody').empty();
+            showDatax(datax);
+    });
+
+    $('#submit').click(function(){
+        
+            let name = $('input[id="nomduprojet"]').val().toUpperCase();
+            let picture = $('input[id="imageduprojet"]').val();
+
+           
+            let tmp = [];  
+           
+           
+                if ($(this).is(':checked')) {
+                let checked = ($(this).val());
+                tmp.push(checked);
+              
+            }
+        
+  
+        
+            datax.push({
+              "_id": "randomId",
+              "isActive": true,
+              "picture": picture,
+              "name": name,
+              "creation": new Date()
+            })
+            showDatax(datax);
+    
+        
+    })
 
 
 
